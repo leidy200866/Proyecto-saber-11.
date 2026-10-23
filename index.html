@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#07152e">
+    <title>Saber 11 | Prepárate para tu futuro</title>
+    <link rel="stylesheet" href="Saber 11.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="fondo-animado" aria-hidden="true">
+        <span class="luz luz-1"></span>
+        <span class="luz luz-2"></span>
+        <span class="luz luz-3"></span>
+        <div class="rejilla"></div>
+    </div>
+    <header class="header">
+        <a href="#" class="marca" onclick="mostrarInicio(); return false;">
+            <img src="logo.png" alt="Logo Saber 11" class="logo">
+            <div class="marca-texto">
+                <h1>SABER <span>11</span></h1>
+                <p>PREPÁRATE · APRENDE · SUPÉRATE</p>
+            </div>
+        </a>
+        <div class="header-etiqueta">
+            <span class="estado-punto"></span>
+            TU FUTURO COMIENZA AQUÍ
+        </div>
+    </header>
+    <nav class="menu" aria-label="Navegación principal">
+        <ul>
+            <li>
+                <a href="#" onclick="mostrarInicio(); return false;">
+                    <span class="menu-icono">⌂</span> Inicio
+                </a>
+            </li>
+            <li class="submenu">
+                <a href="#" aria-haspopup="true">
+                    <span class="menu-icono">✦</span> Nosotros
+                    <span class="flecha">⌄</span>
+                </a>
+                <ul>
+                    <li><a href="#" onclick="mostrarImagen(4); return false;">Misión</a></li>
+                    <li><a href="#" onclick="mostrarImagen(3); return false;">Visión</a></li>
+                    <li><a href="#" onclick="mostrarImagen(1); return false;">Objetivos generales</a></li>
+                    <li><a href="#" onclick="mostrarImagen(2); return false;">Objetivos específicos</a></li>
+                    <li><a href="#" onclick="mostrarImagen(5); return false;">Quiénes somos</a></li>
+                    <li><a href="#" onclick="mostrarImagen(6); return false;">Cronograma</a></li>
+                    <li><a href="#" onclick="mostrarHojasVida(); return false;">Hojas de vida</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="#" aria-haspopup="true">
+                    <span class="menu-icono">⌘</span> Solución tecnológica
+                    <span class="flecha">⌄</span>
+                </a>
+                <ul>
+                    <li><a href="#" onclick="mostrarEvidencias(); return false;">Evidencias</a></li>
+                    <li><a href="#" onclick="mostrarJuego(); return false;">APP interactiva</a></li>
+                    <li><a href="#" onclick="mostrarSolucion(); return false;">Solución</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" onclick="mostrarContacto(); return false;">
+                    <span class="menu-icono">✉</span> Contacto
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main id="contenedor">
+        <section id="inicio" class="vista">
+            <div class="hero">
+                <div class="hero-contenido">
+                    <div class="etiqueta-superior">
+                        <span class="etiqueta-punto"></span>
+                        PLATAFORMA EDUCATIVA
+                    </div>
+                    <h2>
+                        Conoce nuestro proyecto
+                        <span>en este video.</span>
+                    </h2>
+                    <p>
+                        Descubre nuestro proyecto Saber 11 y conoce nuestra propuesta educativa en este video.
+                    </p>
+                    <div class="hero-botones">
+                        <button class="btn-principal" onclick="mostrarEvidencias()">
+                            Explorar evidencias <span>→</span>
+                        </button>
+                        <button class="btn-secundario" onclick="mostrarJuego()">
+                            Probar la APP <span>↗</span>
+                        </button>
+                        <a class="btn-principal boton-video" href="WhatsApp Video 2026-10-22 at 10.16.09 PM.mp4" target="_blank" rel="noopener noreferrer">
+                            Ver nuestro video a continuacion <span>↗</span>
+                        </a>
+                    </div>
+                    <div class="hero-datos">
+                        <div>
+                            <strong>46</strong>
+                            <span>Evidencias</span>
+                        </div>
+                        <div class="dato-separador"></div>
+                        <div>
+                            <strong>5</strong>
+                            <span>Áreas de estudio</span>
+                        </div>
+                        <div class="dato-separador"></div>
+                        <div>
+                            <strong>1</strong>
+                            <span>Gran objetivo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="orbita orbita-externa"></div>
+                    <div class="orbita orbita-interna"></div>
+                    <div class="hero-circulo">
+                        <div class="libro-icono">✧</div>
+                        <span class="circulo-mini mini-1">+</span>
+                        <span class="circulo-mini mini-2">÷</span>
+                        <span class="circulo-mini mini-3">π</span>
+                    </div>
+                    <div class="flotante flotante-arriba">
+                        <span class="flotante-icono">✦</span>
+                        <div>
+                            <strong>Aprende más</strong>
+                            <small>Un paso a la vez</small>
+                        </div>
+                    </div>
+                    <div class="flotante flotante-abajo">
+                        <span class="check-icono">✓</span>
+                        <div>
+                            <strong>¡Tú puedes!</strong>
+                            <small>Construye tu futuro</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="recursos">
+                <div class="seccion-encabezado">
+                    <div>
+                        <span class="subtitulo">TU PREPARACIÓN</span>
+                        <h2>Herramientas para avanzar</h2>
+                    </div>
+                    <p>Explora los recursos que tenemos para ti.</p>
+                </div>
+                <div class="tarjetas-inicio">
+                    <article class="tarjeta tarjeta-azul">
+                        <div class="icono-tarjeta">◎</div>
+                        <span class="tarjeta-numero">01 / PRACTICA</span>
+                        <h3>Simulacros</h3>
+                        <p>Practica con preguntas y fortalece tus conocimientos para el examen.</p>
+                        <button onclick="mostrarEvidencias()" class="enlace-tarjeta">
+                            Explorar <span>→</span>
+                        </button>
+                    </article>
+                    <article class="tarjeta tarjeta-violeta">
+                        <div class="icono-tarjeta">▷</div>
+                        <span class="tarjeta-numero">02 / APRENDE</span>
+                        <h3>Recursos digitales</h3>
+                        <p>Accede a los materiales y actividades de nuestra plataforma.</p>
+                        <button onclick="mostrarEvidencias()" class="enlace-tarjeta">
+                            Ver recursos <span>→</span>
+                        </button>
+                    </article>
+                    <article class="tarjeta tarjeta-verde">
+                        <div class="icono-tarjeta">✧</div>
+                        <span class="tarjeta-numero">03 / DESCUBRE</span>
+                        <h3>APP interactiva</h3>
+                        <p>Explora nuestra aplicación y aprende mientras interactúas.</p>
+                        <button onclick="mostrarJuego()" class="enlace-tarjeta">
+                            Jugar ahora <span>→</span>
+                        </button>
+                    </article>
+                    <article class="tarjeta tarjeta-naranja">
+                        <div class="icono-tarjeta">▤</div>
+                        <span class="tarjeta-numero">04 / CONOCE</span>
+                        <h3>Nuestro proyecto</h3>
+                        <p>Conoce la misión, los objetivos y el trabajo detrás de Saber 11.</p>
+                        <button onclick="mostrarImagen(5)" class="enlace-tarjeta">
+                            Conocernos <span>→</span>
+                        </button>
+                    </article>
+                </div>
+            </section>
+            <div class="franja-final">
+                <div class="franja-simbolo">✦</div>
+                <div>
+                    <h3>El conocimiento abre nuevas puertas.</h3>
+                    <p>Prepárate hoy para alcanzar tus metas mañana.</p>
+                </div>
+                <button onclick="mostrarEvidencias()" class="btn-franja">
+                    Empezar ahora →
+                </button>
+            </div>
+        </section>
+        <section id="bannerContexto" class="banner-contexto" aria-label="Banner de la sección">
+            <img id="bannerImagen" src="" alt="Banner de la sección">
+        </section>
+        <section class="vista vista-imagen" id="vistaImagen">
+            <div class="contenido-panel">
+                <span class="subtitulo">CONOCE NUESTRO PROYECTO</span>
+                <h2 id="tituloSeccion">Nuestra información</h2>
+                <p class="descripcion-panel" id="descripcionSeccion">
+                    Conoce más sobre nuestro proyecto educativo.
+                </p>
+                <img id="imagenSeccion" class="imagen-contenido" src="" alt="">
+            </div>
+        </section>
+            </div>
+        </section>
+        <section id="solucion" class="vista vista-panel">
+            <div class="contenido-panel">
+                <span class="subtitulo">NUESTRA PROPUESTA</span>
+                <h2>Solución tecnológica</h2>
+                <p class="descripcion-panel">
+                    En esta sección encontrarás la descripción de nuestra solución
+                    tecnológica para apoyar la preparación de los estudiantes para las
+                    Pruebas Saber 11.
+                </p>
+                <div class="solucion-tarjeta">
+                    <div class="solucion-simbolo">⌘</div>
+                    <div>
+                        <h3>Una propuesta para aprender</h3>
+                        <p>
+                            Una herramienta digital para acompañar el aprendizaje
+                            y la preparación de los estudiantes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="seccionEvidencias" class="vista vista-panel">
+            <div class="contenido-panel">
+                <span class="subtitulo">SEGUIMIENTO DEL PROYECTO</span>
+                <h2>Nuestras evidencias</h2>
+                <p class="descripcion-panel">
+                    Recorre las evidencias del desarrollo de nuestro proyecto.
+                </p>
+                <div class="contador-evidencias">
+                    <span class="contador-punto"></span>
+                    <span id="numeroEvidencia">Evidencia 1 de 46</span>
+                </div>
+                <div id="contenedorEvidencia"></div>
+                <div id="botonesEvidencias">
+                    <button type="button" onclick="evidenciaAnterior()">← Anterior</button>
+                    <span id="paginaEvidencia">01 / 46</span>
+                    <button type="button" onclick="evidenciaSiguiente()">Siguiente →</button>
+                </div>
+            </div>
+        </section>
+        <section id="juego" class="vista vista-panel">
+            <div class="contenido-panel">
+                <span class="subtitulo">APRENDE INTERACTUANDO</span>
+                <h2>Nuestra APP</h2>
+                <p class="descripcion-panel">
+                    Explora nuestra aplicación interactiva y pon a prueba tus conocimientos.
+                </p>
+                <div class="juego-card">
+                    <div class="juego-barra">
+                        <div class="ventana-puntos"><i></i><i></i><i></i></div>
+                        <span>SABER 11 · EXPERIENCIA INTERACTIVA</span>
+                    </div>
+                    <div class="juego-pantalla">
+                        <iframe
+                            src="https://arcade.makecode.com/---run?id=_c1KfhThEU3wA"
+                            title="Juego interactivo Saber 11"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="vista vista-panel">
+            <div class="contenido-panel">
+                <span class="subtitulo">HABLEMOS</span>
+                <h2>Contacto</h2>
+                <p class="descripcion-panel">
+                    Gracias por visitar nuestro proyecto. Aquí podemos agregar
+                    los datos de contacto del equipo.
+                    <img src="vida1.gif" alt="Hojas de vida del equipo" class="imagen-hoja-vida">
+                    <img src="hoja de vida daniela 2.png" alt="Hojas de vida del equipo" class="imagen-hoja-vida">
+                </p>
+                <div class="solucion-tarjeta">
+                    <div class="solucion-simbolo">✉</div>
+                    <div>
+                        <h3>Conoce nuestro trabajo</h3>
+                        <p>Seguimos trabajando para mejorar nuestra plataforma educativa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="#" onclick="mostrarInicio(); return false;" class="footer-marca">
+            SABER <span>11</span>
+        </a>
+        <p>Aprender hoy. Transformar el mañana.</p>
+        <span class="footer-copy">PROYECTO EDUCATIVO</span>
+    </footer>
+    <script>
+        let evidenciaActual = 1;
+        const evidencias = [
+            "evidencia1.jpeg",
+            "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg",
+            "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg",
+            "10.jpeg", "11.jpeg", "12.jpeg", "13.jpeg",
+            "14.jpeg", "15.jpeg", "16.jpeg", "17.jpeg",
+            "18.jpeg", "19.jpeg", "20.jpeg", "21.jpeg",
+            "22.jpeg", "23.jpeg", "24.jpeg", "25.jpeg",
+            "26.jpeg", "27.jpeg", "28.jpeg", "29.jpeg",
+            "30.jpeg", "31.jpeg", "32.jpeg", "33.jpeg",
+            "34.jpeg", "35.jpeg", "36.jpeg", "37.jpeg",
+            "38.jpeg", "39.jpeg", "40.jpeg", "41.jpeg",
+            "42.jpeg", "43.jpeg", "44.jpeg", "45.jpeg",
+            "46.jpeg"
+        ];
+        const seccionesNosotros = {
+            1: {
+                titulo: "Objetivos generales",
+                descripcion: "Conoce los objetivos generales de nuestro proyecto.",
+                imagen: "general.png",
+                alt: "Objetivos generales"
+            },
+            2: {
+                titulo: "Objetivos específicos",
+                descripcion: "Descubre los objetivos específicos que orientan nuestro trabajo.",
+                imagen: "espec.png",
+                alt: "Objetivos específicos"
+            },
+            3: {
+                titulo: "Nuestra visión",
+                descripcion: "Conoce la visión que guía nuestro proyecto Saber 11.",
+                imagen: "vision.png",
+                alt: "Visión"
+            },
+            4: {
+                titulo: "Nuestra misión",
+                descripcion: "Conoce la misión de nuestra plataforma educativa.",
+                imagen: "MARCOS-TEORICOS.png",
+                alt: "Misión"
+            },
+            5: {
+                titulo: "Quiénes somos",
+                descripcion: "Conoce al equipo y la propuesta detrás de Saber 11.",
+                imagen: "quienes.png",
+                alt: "Quiénes somos"
+            },
+            6: {
+                titulo: "Cronograma",
+                descripcion: "Consulta el cronograma de actividades de nuestro proyecto.",
+                imagen: "crono.png",
+                alt: "Cronograma"
+            }
+        };
+        const todasLasVistas = [
+            "inicio",
+            "vistaImagen",
+            "hojasVida",
+            "solucion",
+            "seccionEvidencias",
+            "juego",
+            "contacto"
+        ];
+        function ocultarTodo() {
+            todasLasVistas.forEach(function(id) {
+                const elemento = document.getElementById(id);
+                if (elemento) elemento.style.display = "none";
+            });
+            document.getElementById("bannerContexto").style.display = "none";
+        }
+        function mostrarBanner(nombre, textoAlternativo) {
+            const seccion = document.getElementById("bannerContexto");
+            const imagen = document.getElementById("bannerImagen");
+            imagen.onerror = function() {
+                seccion.style.display = "none";
+                console.warn("No se pudo cargar el banner: " + nombre);
+            };
+            imagen.src = nombre;
+            imagen.alt = textoAlternativo;
+            seccion.style.display = "block";
+        }
+        function mostrarInicio() {
+            ocultarTodo();
+            document.getElementById("inicio").style.display = "block";
+            subirAlInicio();
+        }
+        function mostrarImagen(numero) {
+            const datos = seccionesNosotros[numero];
+            if (!datos) return;
+            ocultarTodo();
+            document.getElementById("tituloSeccion").textContent = datos.titulo;
+            document.getElementById("descripcionSeccion").textContent = datos.descripcion;
+            const imagen = document.getElementById("imagenSeccion");
+            imagen.src = datos.imagen;
+            imagen.alt = datos.alt;
+            document.getElementById("vistaImagen").style.display = "block";
+            mostrarBanner("nosotrosb.gif", "Banner de Nosotros");
+            subirAlInicio();
+        }
+        function mostrarHojasVida() {
+            ocultarTodo();
+            document.getElementById("hojasVida").style.display = "block";
+            mostrarBanner("nosotrosb.gif", "Banner de Nosotros");
+            subirAlInicio();
+        }
+        function mostrarSolucion() {
+            ocultarTodo();
+            document.getElementById("solucion").style.display = "block";
+            mostrarBanner("solucion.gif", "Banner de Solución tecnológica");
+            subirAlInicio();
+        }
+        function mostrarEvidencias() {
+            ocultarTodo();
+            evidenciaActual = 1;
+            document.getElementById("seccionEvidencias").style.display = "block";
+            mostrarBanner("solucion.gif", "Banner de Solución tecnológica");
+            mostrarEvidenciaActual();
+            subirAlInicio();
+        }
+        function mostrarEvidenciaActual() {
+            const contenedor = document.getElementById("contenedorEvidencia");
+            contenedor.innerHTML = "";
+            const imagen = document.createElement("img");
+            imagen.src = evidencias[evidenciaActual - 1];
+            imagen.alt = "Evidencia " + evidenciaActual;
+            imagen.className = "imagen-evidencia";
+            imagen.onerror = function() {
+                this.alt = "No se pudo cargar " + evidencias[evidenciaActual - 1];
+                this.classList.add("imagen-error");
+            };
+            contenedor.appendChild(imagen);
+            document.getElementById("numeroEvidencia").textContent =
+                "Evidencia " + evidenciaActual + " de " + evidencias.length;
+            document.getElementById("paginaEvidencia").textContent =
+                String(evidenciaActual).padStart(2, "0") +
+                " / " + String(evidencias.length).padStart(2, "0");
+        }
+        function evidenciaSiguiente() {
+            if (evidenciaActual < evidencias.length) {
+                evidenciaActual++;
+                mostrarEvidenciaActual();
+            }
+        }
+        function evidenciaAnterior() {
+            if (evidenciaActual > 1) {
+                evidenciaActual--;
+                mostrarEvidenciaActual();
+            }
+        }
+        function mostrarJuego() {
+            ocultarTodo();
+            document.getElementById("juego").style.display = "block";
+            mostrarBanner("solucion.gif", "Banner de Solución tecnológica");
+            subirAlInicio();
+        }
+        function mostrarContacto() {
+            ocultarTodo();
+            document.getElementById("contacto").style.display = "block";
+            subirAlInicio();
+        }
+        function subirAlInicio() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+        window.addEventListener("DOMContentLoaded", mostrarInicio);
+    </script>
+</body>
+</html>
